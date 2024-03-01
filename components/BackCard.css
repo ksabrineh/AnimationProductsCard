@@ -1,0 +1,16 @@
+.contain{
+    background-image: url("../public/Images/bg-1.png");
+    background-size: contain;
+    background-position: center;
+    width: 400px;
+    height: 476px;
+    background-repeat: no-repeat;
+}
+.image{
+    background-image: url("../public/Images/product1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* width: 380px;
+    height: 376px; */
+}

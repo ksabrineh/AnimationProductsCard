@@ -2,32 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+button {
+    --button-star-greyscale: 100%;
+    --button-star-contrast: 0%;
+  
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #5e5e5e;
+    border-radius: 36px;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 90px;
+    font-family: "Montserrat Alternates";
+    font-size: 42px;
+    letter-spacing: -2px;
+    font-weight: 600;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 40px 80px 0px rgba(0, 0, 0, 0.05),
+      inset 0px -10px 20px 0px rgba(0, 0, 0, 0.05),
+      0px 10px 20px 0px rgba(0, 0, 0, 0.05);
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
