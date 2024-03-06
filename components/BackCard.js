@@ -6,10 +6,10 @@ import {
   useTransform,
   AnimatePresence,
 } from "framer-motion";
-import "./BackCard.css";
 import chair from "../public/Images/chair.png";
+import "./BackCard.css";
 import flower from "../public/Images/flower.png";
-
+import imageProduct from "@/public/Images/4-43192_modern-sofa-images-png-transparent-png.png";
 import Image from "next/image";
 import Star from "./Star";
 
@@ -67,11 +67,16 @@ const BackCard = (props) => {
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
         >
           <div className="overflow-hidden">
-            <div className="w-[400px] h-[476px] absolute rounded-3xl text-white contain pt-20 flex">
+            <div className="w-[400px] h-[476px] absolute rounded-3xl text-white containTwo pt-20 flex">
               <div className="text-right w-[60%] pt-20 text-bold text-7xl">
-                Herb Pods
+                Sofa
               </div>
-              <div className="image w-[30%]"></div>
+              <div className="w-[95%]">
+                <img
+                  src={imageProduct.src}
+                  className="object-contain w-[400px] h-[400px]"
+                />
+              </div>
             </div>
           </div>
         </motion.div>
@@ -96,12 +101,12 @@ const BackCard = (props) => {
               <tbody className="w-full">
                 <tr className="h-20 bg-gray-200 bg-opacity-50">
                   <td className="text-gray-200 text-opacity-0">John</td>
-                  <td>flower</td>
+                  <td>Sofa</td>
                   <td>110 x 110</td>
                   <td>
                     <Image
-                      src={flower}
-                      className="object-contain w-24 absolute top-[300px] h-24 p-2"
+                      src={imageProduct}
+                      className="object-contain w-24 absolute top-[304px] h-24 p-2"
                     />
                   </td>
                   <td>+</td>
@@ -123,9 +128,7 @@ const BackCard = (props) => {
           </div>
         </div>
       </div>
-      <div className="text-xs opacity-50 pt-5">
-      powerd by ksabrineh
-      </div>
+      <div className="text-xs opacity-50 pt-5">powerd by ksabrineh</div>
     </div>
   );
 };

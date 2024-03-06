@@ -3,14 +3,14 @@
     background-size: contain;
     background-position: center;
     width: 400px;
-    height: 476px;
+    height: 475px;
     background-repeat: no-repeat;
 }
-.image{
-    background-image: url("../public/Images/product1.png");
+.containTwo{
+    background-image: url("../public/Images/bg-2.png");
     background-size: contain;
+    background-position: center;
+    width: 400px;
+    height: 475px;
     background-repeat: no-repeat;
-    background-position: right;
-    /* width: 380px;
-    height: 376px; */
 }

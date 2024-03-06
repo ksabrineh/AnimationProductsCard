@@ -9,10 +9,9 @@ import {
 import "./BackCard.css";
 import chair from "../public/Images/chair.png";
 import flower from "../public/Images/flower.png";
-
 import Image from "next/image";
 import Star from "./Star";
-
+import imageProduct from "@/public/Images/product1.png";
 import MyLogo from "@/public/Images/PicsArt_02-04-08.50.49.png";
 const FrontCard = (props) => {
   const [exitX, setExitX] = useState(0);
@@ -69,9 +68,11 @@ const FrontCard = (props) => {
           <div className="overflow-hidden">
             <div className="w-[400px] h-[476px] absolute rounded-3xl text-white contain pt-20 flex">
               <div className="text-right w-[60%] pt-20 text-bold text-7xl">
-                Flower 
+                Flower
               </div>
-              <div className="image w-[30%]"></div>
+              <div className="w-[30%]">
+                <img src={imageProduct.src} className="object-contain w-[400px] h-[400px]" />
+              </div>
             </div>
           </div>
         </motion.div>
@@ -123,9 +124,7 @@ const FrontCard = (props) => {
           </div>
         </div>
       </div>
-      <div className="text-xs opacity-50 pt-5">
-      powerd by ksabrineh
-      </div>
+      <div className="text-xs opacity-50 pt-5">powerd by ksabrineh</div>
     </div>
   );
 };
